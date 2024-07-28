@@ -1,0 +1,93 @@
+<!-- <div *ngIf="outdoorproduct">
+  <section>
+      <div class="container flex mt-4">
+          <div class="left mt-4">
+              <div class="main-image mb-3">
+                  <img [src]="outdoorproduct.forntImageUrl" class="slide">
+              </div>
+              <div class="option flex">
+                  <img [src]="outdoorproduct.BackImageUrl" onclick="img('product.BackImageUrl')">
+                  <img [src]="outdoorproduct.thirdImageUrl" onclick="img('./images/Untitled-7_bfee0037-9bda-4576-a03a-1dcdd11e3fd3_540x.jpg')">
+                  <img [src]="outdoorproduct.fourthImageUrl" onclick="img('./images/bliss-bed_540x.jpg')">
+                  <img [src]="outdoorproduct.fifthImageUrl" onclick="img('./images/Untitled-4_9ed83de6-7a50-40be-ad7f-c707a67e480d_540x.jpg')">
+              </div>
+          </div>
+          <div class="right">
+              <h3>{{outdoorproduct.productName}}</h3>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+              <h3><del>LE {{outdoorproduct.price}}</del> LE {{outdoorproduct.afterDiscount}}</h3>
+              <p> {{outdoorproduct.description}}</p>
+              <h5>COLOR</h5>
+              <div class="color flex1 mb-4 mt-3">
+                  <span ></span>
+                  <span class="ms-2"></span>
+                  <span class="mx-2"></span>
+                  <span></span>
+
+              </div>
+              <h5 class="mb-3">NUMBER</h5>
+              <div class="add flex1">
+                  <button (click)="decrement()" id="decrement" >-</button>
+                  <label class="mx-2" id="quantity">{{count}}</label>
+                  <button (click)="increment()" id="increment">+</button>
+              </div>
+              <button class="add-card mt-4">Add To Bag</button>
+          </div>
+      </div>
+  </section>
+  </div> -->
+  <!-- end of ngif -->
+
+
+
+  <div *ngIf="outdoorproduct">
+    <section>
+        <div class="container flex mt-4">
+            <div class="left mt-4">
+                <div class="main-image mb-3">
+                    <img [src]="outdoorproduct.forntImageUrl" class="slide">
+                </div>
+                <div class="option flex">
+                    <img [src]="outdoorproduct.BackImageUrl" (click)="callFunctionImg(outdoorproduct.BackImageUrl)">
+                    <img [src]="outdoorproduct.thirdImageUrl" (click)="callFunctionImg(outdoorproduct.thirdImageUrl)">
+                    <img [src]="outdoorproduct.fourthImageUrl" (click)="callFunctionImg(outdoorproduct.fourthImageUrl)">
+                    <img [src]="outdoorproduct.fifthImageUrl" (click)="callFunctionImg(outdoorproduct.fifthImageUrl)">
+                </div>
+            </div>
+            <div class="right">
+                <h3>{{outdoorproduct.productName}}</h3>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                <h3><del>LE {{outdoorproduct.price}}</del> LE {{outdoorproduct.afterDiscount}}</h3>
+                <p> {{outdoorproduct.description}}</p>
+                <h5>COLOR</h5>
+                <div class="color flex1 mb-4 mt-3">
+                    <span ></span>
+                    <span class="ms-2"></span>
+                    <span class="mx-2"></span>
+                    <span></span>
+
+                </div>
+                <h5 class="mb-3">NUMBER</h5>
+                <div class="add flex1">
+                    <button (click)="decrement()" id="decrement" >-</button>
+                    <label class="mx-2" id="quantity">{{count}}</label>
+                    <button (click)="increment()" id="increment">+</button>
+                </div>
+                <button class="add-card mt-4">Add To Bag</button>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- end of ngif -->
+
+
+
+

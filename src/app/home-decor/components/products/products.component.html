@@ -1,0 +1,96 @@
+<div class="container-fluid outer-container d-flex align-items-center mb-5">
+<div class="container">
+    <div class="homeDecor_title">
+        <h2>Home Decor</h2>
+        <a class="previous_homePage text-decoration-none text-dark" routerLink="/">
+          <i class="fa-solid fa-house"></i>
+          <span> home</span>
+        </a>
+        <div class="presentPage d-inline-block ms-2">
+            <i class="fa-solid fa-circle dotPage_icon"></i>
+            <span> Home Decor</span>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div *ngIf="show"  class="container d-flex flex-wrap justify-content-center justify-content-lg-between ">
+<div *ngFor="let product of data">
+<div style="width: 350px;">
+    <div class="item mt-5 mb-3">
+        <img [src]="product.forntImageUrl" class="Sirv image-main" alt="..." width="350">
+        <img [src]="product.BackImageUrl" class="Sirv image-hover" alt="..." width="350">
+
+        <div class="hoverIcons m-3">
+            <a
+                data-bs-toggle="popover" data-bs-trigger="hover"
+                data-bs-placement="top" title=""
+                data-bs-content="quick add">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <a
+                data-bs-toggle="popover" data-bs-trigger="hover"
+                data-bs-placement="top" title=""
+                data-bs-content="add to whishlist">
+                <i class="fa-regular fa-star"></i>
+
+            </a>
+
+            <a
+                data-bs-toggle="popover" data-bs-trigger="hover"
+                data-bs-placement="top" title=""
+                data-bs-content="quick view">
+                <i class="fa-solid fa-image"></i>
+
+            </a>
+
+        </div>
+    </div>
+
+    <div class=" text-center">
+        <h5 class="card-title">{{product.productName}}</h5>
+        <div class="my-2">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <p class="card-text"><del>LE {{product.price}}</del> LE {{product.afterDiscount}}</p>
+        <a class="readMore" routerLink="/product/{{product.id}}">Read More</a>
+    </div>
+</div>
+</div>
+</div>
+
+<app-our-services/>
+
+
+<div class="seeLessMOre">
+  <div class="container">
+    <h2 class="seeTitle mb-4">Home Decor</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ducimus quia obcaecati temporibus inventore? Quae, tempore repellat a eum cupiditate veniam officia? Illo consequuntur, consectetur facere enim reiciendis doloribus facilis?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque non minus perspiciatis, reprehenderit deserunt magni nobis, accusantium ad odit sed explicabo! Optio quasi quaerat molestiae vitae consequuntur in blanditiis.
+      <span id="points">...</span>
+
+      <!-- Define the text that would be
+              hidden by default and only shown
+              when clicked on the button -->
+      <span id="moreText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam itaque vel numquam repellendus aperiam natus mollitia at libero aspernatur. Id inventore natus eum omnis reiciendis molestiae quisquam deleniti nam magni?
+      </span>
+    </p>
+
+
+    <!-- Trigger toggleText() when the
+          button is clicked -->
+    <button class="textButton" (click)="callFunctionSee()" id="textButton">
+      Show More +
+    </button>
+
+</div>
+</div>
+
+

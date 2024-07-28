@@ -1,0 +1,57 @@
+/* Start of Offers Section */
+.offreContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0rem auto;
+  max-width: 1200px;
+}
+.offers {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 350px;
+  border-radius: 10px;
+  transition: transform 0.9s ease;
+  margin: 10px;
+}
+.offers img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.offerDetails{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+}
+
+.offerName {
+  font-size: 25px;
+  color: rgba(13, 5, 5, 0.786);
+}
+.offerDiscount {
+  font-size: 16px;
+  color: #a09a9a;
+}
+
+
+.offers:hover{
+  transform: scale(1.1);
+}
+.offerBtn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: #080808b2;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 120px;
+}
+/* End of Offers Section */
+

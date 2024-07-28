@@ -1,0 +1,44 @@
+<div *ngIf="product">
+<section>
+    <div class="container flex mt-4">
+        <div class="left mt-4">
+            <div class="main-image mb-3">
+                <img [src]="product.forntImageUrl" class="slide">
+            </div>
+            <div class="option flex">
+                <img [src]="product.BackImageUrl" (click)="callFunctionImg(product.BackImageUrl)">
+                <img [src]="product.thirdImageUrl" (click)="callFunctionImg(product.thirdImageUrl)">
+                <img [src]="product.fourthImageUrl" (click)="callFunctionImg(product.fourthImageUrl)">
+                <img [src]="product.fifthImageUrl" (click)="callFunctionImg(product.fifthImageUrl)">
+            </div>
+        </div>
+        <div class="right">
+            <h3>{{product.productName}}</h3>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+            <h3><del>LE {{product.price}}</del> LE {{product.afterDiscount}}</h3>
+            <p> {{product.description}}</p>
+            <h5>COLOR</h5>
+            <div class="color flex1 mb-4 mt-3">
+                <span ></span>
+                <span class="ms-2"></span>
+                <span class="mx-2"></span>
+                <span></span>
+
+            </div>
+            <h5 class="mb-3">NUMBER</h5>
+            <div class="add flex1">
+                <button (click)="decrement()" id="decrement" >-</button>
+                <label class="mx-2" id="quantity">{{count}}</label>
+                <button (click)="increment()" id="increment">+</button>
+            </div>
+            <button class="add-card mt-4">Add To Bag</button>
+        </div>
+    </div>
+</section>
+</div>
+<!-- end of ngif -->
+

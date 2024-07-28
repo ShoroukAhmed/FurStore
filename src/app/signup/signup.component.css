@@ -1,0 +1,53 @@
+/* Start Of SignUp*/
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #fefdfd;
+  border: 1px solid var(--gray-color);
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.form-container input[type=text]:hover,
+.form-container input[type=password]:hover {
+  border: 1px solid var(--green-color);
+}
+.form-container .btn {
+  border-radius: 12px;
+  border: 1px solid var(--gray-color);
+  background-color: #0a5d5d;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 10px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form-container .cancel {
+  background-color: d4a373;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  color: #f1f1f1;
+}
+
+.registerText{
+  text-decoration: none;
+  color: #0a5d5d;
+}
+
+.signup {
+  padding: 30px;
+  width: 500px;
+}
+
+input .signupInput{
+  border: 2px solid black;
+}
+/* End of SignUp*/

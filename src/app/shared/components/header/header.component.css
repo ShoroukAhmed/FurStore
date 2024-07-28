@@ -1,0 +1,174 @@
+.navbar{
+  background-color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+  color: var(--green-color);
+}
+
+.navbar .icons svg{
+  font-size: 22px;
+  padding-left: 25px;
+}
+
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+.starNum{
+  color: black;
+}
+
+
+.links li a::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  border-bottom: 2px solid var(--green-color);
+  border-radius: 10px;
+
+  top: 2rem;
+  left: 50%;
+  transform: translatex(-50%);
+
+  opacity: 0;
+  transition: .5s;
+}
+.navbar .navbar-nav .nav-link.active::after,
+.links li a:focus::after,
+.links li a:hover::after{
+  width: 50%;
+  border-bottom: 2px solid var(--green-color);
+  opacity: 1;
+}
+
+
+
+.icons i{
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  transition: .5s;
+
+  }
+
+.icons i:hover{
+  background-color: var(--gray-color);
+  cursor: pointer;
+}
+
+.starItems{
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  font-size: 11px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+
+}
+
+.cartItems{
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  font-size: 11px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+}
+
+
+/* start of pop up login */
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  position: fixed;
+  border-radius: 20px;
+  padding: 30px 20px 30px 20px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 3px solid #f1f1f1;
+  background-color: #fbfbfb;
+  z-index: 9;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #fefdfd;
+  border: 1px solid var(--gray-color);
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.form-container input[type=text]:hover,
+.form-container input[type=password]:hover {
+  border: 1px solid var(--green-color);
+}
+.form-container .btn {
+  /* background-color: #ffffff; */
+  border-radius: 12px;
+  border: 1px solid var(--gray-color);
+  color: rgb(53, 50, 50);
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 10px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form-container .cancel {
+  background-color: d4a373;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+  color: #f1f1f1;
+  background-color: #0a5d5d;
+}
+.forgotHover{
+  color: black;
+  text-decoration: none;
+}
+.forgotHover:hover{
+  text-decoration: none;
+  color: rgba(0, 0, 0 , .8 );
+}
+/* end of pop up login */
+
+
+
+
+.icons .cart{
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+}

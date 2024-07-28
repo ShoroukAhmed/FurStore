@@ -1,0 +1,124 @@
+/* start of HomeDecor Page */
+.outer-container{
+  background-color: var(--gray-color);
+  height: 350px;
+}
+  .homeDecor_title{
+      background-color: var(--gray-color);
+  }
+
+  .dotPage_icon{
+      font-size: 5px;
+  }
+
+.item {
+  position: relative;
+  max-width: 100%;
+}
+
+.image-main, .image-hover{
+  border-radius: .375rem;
+}
+.item img.Sirv.image-hover {
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+object-fit: contain;
+opacity: 0;
+transition: opacity .5s;
+}
+.item:hover img.Sirv.image-hover {
+opacity: 1;
+}
+
+
+.popover {
+  background-color: black;
+}
+
+.popover-body {
+  color: white;
+}
+.hoverIcons{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hoverIcons a i{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: var(--green-color);
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  font-size: 20px;
+}
+
+/* .hoverIcons a {
+  color: var(--green-color);
+  font-size: 20px;
+} */
+
+.hoverIcons a i:hover{
+  background-color: var(--green-color);
+  color: white;
+  cursor: pointer;
+}
+
+.item:hover .hoverIcons a i{
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.readMore{
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-color);
+  transition: .3s;
+}
+
+.readMore:hover{
+  color: white;
+  background-color: var(--green-color);
+  border-color: var(--green-color);
+}
+
+/* Start Of See less, See More */
+.seeLessMOre{
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 100px 0 100px 0;
+}
+
+
+
+/* Initially, hide the extra text that
+            can be revealed with the button */
+            #moreText {
+
+              /* Display nothing for the element */
+              display: none;
+          }
+          .textButton{
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            border: 1px solid var(--gray-color);
+            transition: .3s;
+          }
+
+/* End Of See less, See More */
+
+/* End of HomeDecor Page */

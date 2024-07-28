@@ -1,0 +1,12 @@
+.carousel-item button{
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.carousel-item button:hover{
+  background-color: var(--green-color);
+  border-color: var(--green-color);
+  transition: .3s;
+  color: white;
+}

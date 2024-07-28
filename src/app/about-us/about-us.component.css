@@ -1,0 +1,70 @@
+.outer-container{
+  height: 300px;
+}
+
+.dotPage_icon{
+  font-size: 5px;
+}
+
+.usSec1Text1{
+  font-weight: bold;
+  margin-top: 2rem
+}
+
+.usSec1Text1, .usSec1Text2, .usSec1Text3{
+  padding-top: 1rem;
+}
+
+.bestclass{
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 2rem;
+  margin: 5rem 0 7rem 0;
+}
+
+.bestQuote{
+  color: #c1c1c1;
+  font-size: 3rem;
+  padding: 0 1rem  0 1rem;
+}
+
+.bestText1{
+  font-size: 20px;
+}
+
+.bestText2{
+  font-size: 22px;
+}
+
+.bestText3{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.chooseUs, .trust{
+  padding: 150px 2rem 150px 2rem;
+}
+
+.chooseUsText1, .trustText1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* @media (min-width: 768px) {
+  .homeDecor_title h2 {
+      font-size: 3rem;
+  }
+
+  .previous_homePage,
+  .presentPage {
+      font-size: 1.25rem;
+  }
+
+  .usSec1Text1, .usSec1Text2, .usSec1Text3, .bestText1, .bestText2, .bestText3, .chooseUsText1, .trustText1 {
+      font-size: 1.25rem;
+  }
+
+  .bestclass, .chooseUs, .trust {
+      padding: 40px;
+  }
+} */

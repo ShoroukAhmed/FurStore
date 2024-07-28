@@ -1,0 +1,127 @@
+/* start of services */
+
+.section_4{
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+}
+
+.services{
+  padding: 20px;
+}
+.services_icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.nonColoredIcon{
+  position: absolute;
+  transition: .3s;
+}
+
+.services:hover .nonColoredIcon{
+
+  transform: translatey(-70px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+
+}
+
+.coloredIcon{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: translatey(70px);
+  z-index: -1;
+  transition: .3s;
+  transition-delay: .1s;
+
+}
+
+.services:hover .coloredIcon{
+  visibility: visible;
+  opacity: 1;
+  transform: translatey(0px);
+
+}
+
+.services_desc{
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services_desc h3{
+  margin: 10px;
+}
+
+hr.rightLine{
+  visibility: hidden;
+}
+
+hr.bottomLine{
+  border: 1px solid var(--green-color);
+  margin-top: 40px;
+}
+
+
+@media only screen and (min-width: 1100px) {
+  /* For tablets: */
+
+  .section_4{
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  justify-content: space-between;
+  }
+
+  hr.rightLine{
+  visibility: visible;
+  border: 1px solid var(--green-color);
+  }
+  hr.bottomLine{
+  width: 50%;
+  border: 1px solid var(--green-color);
+  margin: 40px auto 0px auto;
+  /* margin-top: 40px; */
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  /* For desktop: */
+
+  .section_4{
+  grid-template-columns:auto auto auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  }
+
+  hr.rightLine{
+  visibility: visible;
+  border: 1px solid var(--green-color);
+  }
+  hr.bottomLine{
+  display: none;
+  }
+
+  .verticalLine{
+  height: 100%;
+  width: 2px;
+  border-radius: 5px;
+  background-color: var(--green-color);
+  margin: -140px 0px 0px -85px ;
+  }
+
+  .services_line{
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--green-color);
+  margin: 20px 0px;
+}
+
+}
+/* end Of services */

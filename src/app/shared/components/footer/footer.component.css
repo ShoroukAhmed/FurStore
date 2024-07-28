@@ -1,0 +1,18 @@
+.footerLink{
+  color: gray;
+  text-decoration: none;
+}
+footer{
+  margin: 30px;
+  padding: 20px;
+}
+footer  a:hover {
+  text-decoration: none;
+}
+.icons{
+  word-spacing: 17px;
+  color: gray;
+  letter-spacing: 2px;
+}
+
+/* End of Footer */
